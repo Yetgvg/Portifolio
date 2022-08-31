@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #57bd93;
+}
+
+.NavBarMenu{
+    background-color: #009d71;
+    overflow: hidden;
+}
+
+.NavBarMenu a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.NavBarMenu a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.NavBarMenu a:active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.NavBarMenu img{
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+    display: block;
+    width:53px;
+}
+
+.container-lg{
+    margin-top: 10%;
+    background-color: #2ca880;
+    padding: 20px;
+}
+
+.card{
+    width: 18em;
+    text-align: center; 
+    background-color: #32ae7e;  
+    border: 3px solid #009d71;
+}
+
+.card-img-top{
+    /* width: 250px; */
+}
+
