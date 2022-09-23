@@ -4,56 +4,103 @@
 }
 
 body{
-    background-color: #57bd93;
+    background-color: #d7d9d0;
+    font-family: 'Poppins', sans-serif;
+    /* background: #fafafa; */
 }
 
 .NavBarMenu{
-    background-color: #009d71;
+    background-color: rgb(24, 48, 40);
     overflow: hidden;
-}
-
-.NavBarMenu a{
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    height: 80px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.NavBarMenu a:hover{
-    background-color: #ddd;
-    color: black;
-}
-
-.NavBarMenu a:active{
-    background-color: #04AA6D;
-    color: white;
 }
 
 .NavBarMenu img{
-    float: left;
+    /* float: left; */
     margin-right: 50px;
     text-align: center;
+    /* display: block; */
+    width:280px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
     display: block;
-    width:53px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 
-.container-lg{
-    margin-top: 10%;
-    background-color: #2ca880;
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: 0px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse{
+    width: 50px;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: rgb(24, 48, 40);
+    color: #d7d9d0;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
     padding: 20px;
+    background: rgb(19, 71, 55);
 }
 
-.card{
-    width: 18em;
-    text-align: center; 
-    background-color: #32ae7e;  
-    border: 3px solid #009d71;
+#sidebar ul.components {
+    border-bottom: 1px solid rgb(19, 71, 55);
 }
 
-.card-img-top{
-    /* width: 250px; */
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #d7d9d0;
+    background: rgb(19, 71, 55);
 }
 
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #d7d9d0;
+    background: rgb(19, 71, 55);
+}
