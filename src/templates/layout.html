@@ -17,10 +17,11 @@
 <body>
     {% block NavMenu %}
     <div class="NavBarMenu shadow" id="MyNav">
-        <button type="button" id="sidebarCollapse" class="btn btn-light">
+        <button type="button" onclick="w3_open()" id="sidebarCollapse" class="btn btn-light">
             <i class="fas fa-align-left"></i>
             <img src="../static/Imagens/Bola.jpg" class="img-fluid img">
         </button>
+        <!-- <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button> -->
         <img src="../static/Imagens/Logo.png" class="img-fluid img" alt="Logo">
     </div>
     {% endblock %}

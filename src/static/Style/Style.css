@@ -2,35 +2,36 @@
     font-family: LOL;
     src: url(../Font/FontLoL/Regular.ttf);
 }
+
 @font-face {
     font-family: Vava;
     src: url(../Font/FontVava/Valorant\ Font.ttf);
 }
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-body{
+body {
     background-color: #d7d9d0;
     font-family: LOL;
     /* background: #fafafa; */
 }
 
-.NavBarMenu{
+.NavBarMenu {
     background-color: rgb(24, 48, 40);
     overflow: hidden;
     height: 80px;
     text-align: center;
 }
 
-.NavBarMenu img{
+.NavBarMenu img {
     /* float: left; */
     margin-right: 50px;
     text-align: center;
     /* display: block; */
-    width:280px;
+    width: 280px;
 }
 
 .wrapper {
@@ -54,6 +55,7 @@ a[data-toggle="collapse"] {
     #sidebar {
         margin-left: 0px;
     }
+
     #sidebar.active {
         margin-left: 0;
     }
@@ -73,15 +75,17 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-#sidebarCollapse{
+#sidebarCollapse {
     width: 50px;
 }
 
 #sidebar.active {
     margin-left: -250px;
+    position: relative;
 }
 
 #sidebar {
+    position: relative;
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
@@ -104,31 +108,34 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #d7d9d0;
     background: rgb(19, 71, 55);
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active>a, a[aria-expanded="true"] {
     color: #d7d9d0;
     background: rgb(19, 71, 55);
 }
 
-.RowMargin{
-    margin-top: 5%;
-    margin-bottom: 5%;
+.RowMargin {
+    margin-top: 10%;
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
-.col-sm p{
-    color:rgb(24, 48, 40);
+.col-sm p {
+    color: rgb(24, 48, 40);
     font-family: LOL;
 }
 
-h1{
+h1 {
     font-family: Vava;
 }
 
-.footer p{
+.footer p {
     color: white;
     font-family: LOL;
 }
@@ -139,6 +146,4 @@ h1{
     background-color: rgb(24, 48, 40);
     color: white;
     text-align: center;
-  }
-
-
+}
